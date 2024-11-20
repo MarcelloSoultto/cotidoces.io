@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coti Doces</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coti Doces</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h2>Transformando suas festas em momentos doces!</h2>
+            <button onclick="scrollToSection('produtos')">Veja Nossas Delícias</button>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Na Coti Doces, fazemos mais do que apenas bolos; criamos experiências. Cada bolo é feito com amor, utilizando ingredientes de alta qualidade. Estamos aqui para tornar seu evento inesquecível!</p>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <h3>Bolo de Chocolate</h3>
+                <img src="chocolate.jpg" alt="Bolo de Chocolate">
+            </div>
+            <div class="produto">
+                <h3>Bolo de Baunilha</h3>
+                <img src="baunilha.jpg" alt="Bolo de Baunilha">
+            </div>
+            <div class="produto">
+                <h3>Bolo Red Velvet</h3>
+                <img src="redvelvet.jpg" alt="Bolo Red Velvet">
+            </div>
+        </div>
+    </section>
+
+    <section id="pedidos">
+        <h2>Faça seu Pedido</h2>
+        <form id="pedido-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+            <label for="produto">Tipo de Produto:</label>
+            <select id="produto">
+                <option value="bolo-chocolate">Bolo de Chocolate</option>
+                <option value="bolo-baunilha">Bolo de Baunilha</option>
+                <option value="bolo-red-velvet">Bolo Red Velvet</option>
+            </select>
+            <label for="data">Data do Evento:</label>
+            <input type="date" id="data" required>
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes"></textarea>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Endereço: Rua dos Doces, 123, Cidade, Estado</p>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>Email: contato@cotidoces.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coti Doces. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
