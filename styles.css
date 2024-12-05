@@ -29,7 +29,7 @@ nav a {
 }
 
 .banner {
-    background-image: url('banner.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-image: url(img/coti_logo.jpg); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     padding: 50px;
     text-align: center;
@@ -38,12 +38,17 @@ nav a {
 
 .produtos-lista {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .produto {
     text-align: center;
+}
+.produto img{
+    max-width: 50%;
+    height: auto;
+    padding: 10px;
 }
 
 footer {
